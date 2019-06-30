@@ -27,7 +27,6 @@ object Codility extends App {
   println(isLeapYear(2100))
   
   def findOddElement(a: Array[Int]): Int={
- 
    
       a.groupBy(identity).
       mapValues(_.size)
@@ -40,9 +39,7 @@ object Codility extends App {
   }
   
   def isLeapYear(year:Int):Boolean ={
-    println(year % 4)
-     println(year % 100)
-      println(year % 400)
+    
     (year % 4 == 0)
   }
   
