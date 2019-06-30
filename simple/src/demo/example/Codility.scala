@@ -49,7 +49,7 @@ object Codility extends App {
  
   }
   
-    println(isArmStrong(371))
+   println(isArmStrong(371))
    println(isArmStrong(372))
   
   /*
