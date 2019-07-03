@@ -52,9 +52,6 @@ object Codility extends App {
    println(isArmStrong(371))
    println(isArmStrong(372))
   
-  /*
-  val isArmStrong = number :Int => {
-    number.toS.map(f => scala.math.pow(f.asDigit,number.length)
-  }*/
+
   
 }
