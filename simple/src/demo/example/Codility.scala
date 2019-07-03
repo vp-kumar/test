@@ -49,8 +49,18 @@ object Codility extends App {
  
   }
   
+   
+  def isPangram(data:String):Boolean= {
+    val letters= 'a' to 'z'
+    val v1=data.toLowerCase().trim().toSet.filter(f => letters.contains(f))
+    println(s"v1:$v1")
+    letters.toSet == v1
+
+  }
+  
    println(isArmStrong(371))
    println(isArmStrong(372))
+   isPangram("welcome ball")
   
 
   
