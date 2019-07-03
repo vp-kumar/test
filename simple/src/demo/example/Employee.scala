@@ -125,7 +125,7 @@ println(x.get)
 //println(y.get)
 println(y.getOrElse("default"))
 var bb: Int = 10
-bb = "funny"
+
 println(bb)
   
 }
