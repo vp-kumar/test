@@ -61,7 +61,16 @@ object Codility extends App {
    println(isArmStrong(371))
    println(isArmStrong(372))
    isPangram("welcome ball")
+   
+ val myList=List(1,2,3,4)
+ myList.foreach(println)
+ 
+ val powerList=(y:List[Int]) => for(x <- myList) yield x*x
   
-
+println(s"powerList= ${powerList(myList)}")
+ 
+ def myOpt(x:String):Option[String]=x match { case "hello" => None;  case "HELLO" => Some("Big")}
+ println(myOpt("hello"))
+ println(myOpt("HELLO").get)
   
 }
