@@ -53,7 +53,7 @@ object Codility extends App {
   def isPangram(data:String):Boolean= {
     val letters= 'a' to 'z'
     val v1=data.toLowerCase().trim().toSet.filter(f => letters.contains(f))
-    println(s"v1:$v1")
+    println(s"v1:$v1") 
     letters.toSet == v1
 
   }
@@ -61,7 +61,16 @@ object Codility extends App {
    println(isArmStrong(371))
    println(isArmStrong(372))
    isPangram("welcome ball")
+   
+ val myList=List(1,2,3,4)
+ myList.foreach(println)
+ 
+ val powerList=(y:List[Int]) => for(x <- myList) yield x*x
   
-
+println(s"powerList= ${powerList(myList)}")
+ 
+ def myOpt(x:String):Option[String]=x match { case "hello" => None;  case "HELLO" => Some("Big")}
+ println(myOpt("hello"))
+ println(myOpt("HELLO").get)
   
 }
